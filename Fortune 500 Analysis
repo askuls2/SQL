@@ -18,7 +18,7 @@ FROM fortune_companies
 GROUP BY industry
 HAVING average_revenue_billions >=150;
 
-# Which industry has the highest average employee tenure *and* more than 70000 employees?
+# Which industry has the highest average employee tenure and more than 70000 employees?
 SELECT industry, employees, max(avg_employee_tenure)
 FROM fortune_companies
 WHERE employees >=70000;
